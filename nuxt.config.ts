@@ -5,5 +5,12 @@ export default defineNuxtConfig({
         highlight: {
             theme: 'github-light'
         }
-    }
+    },
+    css: ['~/assets/css/main.css'],
+    postcss: {
+        plugins: {
+            tailwindcss: {},
+            autoprefixer: {},
+        },
+    },
 })
