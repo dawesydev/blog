@@ -22,7 +22,7 @@ const { data: blogPost } = await useAsyncData(`content-${path}`, () => {
         />
       </template>
     </TheHero>
-    <div class="container">
+    <div class="bg-[#1e2d42]">
       <section class="articles">
         <div class="column is-8 is-offset-2">
           <section class="blog-post-card card article">
@@ -35,5 +35,6 @@ const { data: blogPost } = await useAsyncData(`content-${path}`, () => {
         </div>
       </section>
     </div>
+    <TheFooter />
   </main>
 </template>

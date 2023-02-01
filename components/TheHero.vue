@@ -1,10 +1,10 @@
 <script setup></script>
 
 <template>
-  <section class="hero is-info is-medium is-bold">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <h1 class="title is-size-1">
+  <section class="bg-hero bg-cover bg-slate-900 h-96">
+    <div class="grid place-items-center w-full pt-16">
+      <div class="font-body text-gray-200">
+        <h1 class="text-2xl">
           <slot />
         </h1>
         <slot name="subtitle" />

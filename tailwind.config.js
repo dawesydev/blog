@@ -9,7 +9,15 @@ module.exports = {
     "./app.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'body': ['General Sans', 'ui-sans-serif', 'system-ui'],
+      },
+      backgroundImage: {
+        'hero': "url('/assets/img/hero.svg')",
+        'footer': "url('/assets/img/footer.svg')"
+      }
+    },
   },
   plugins: [],
 }

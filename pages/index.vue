@@ -1,6 +1,13 @@
 <template>
-  <main class="bg-gray-800 min-h-screen">
-    <TheHero> A Nuxt Content v2 Blog with Bulma </TheHero>
+  <main class="bg-[#1e2d42] min-h-screen">
+    <TheHero> Recent Posts </TheHero>
     <BlogPostList />
+    <TheFooter />
   </main>
 </template>
+<script>
+import TheFooter from "../components/TheFooter";
+export default {
+  components: {TheFooter}
+}
+</script>
