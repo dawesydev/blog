@@ -8,21 +8,22 @@ const { data: blogPostList } = useAsyncData('blogPostList', () => {
 <template>
   <div class="max-w-5xl mx-auto">
     <section class="flex justify-center">
-      <div class="min-h-fit grid gap-4 font-body">
-        <div v-for="blogPost in blogPostList" :key="blogPost._path" class="p-4 border border-blue-400">
+      <div class="min-h-fit grid gap-96 font-body">
+        <div v-for="blogPost in blogPostList" :key="blogPost._path" class="py-8 bg-gray-100 bg-opacity-25 border-2 border-gray-200 rounded-3xl h-80">
           <NuxtLink :to="blogPost._path">
-            <section class="">
-              <div class="">
-                <div class="text-gray-200">
-                  <h3 class="font-medium">
+            <section class="flex flex-col px-16 md:justify-end">
+              <div class="relative w-full max-w-l">
+                <div class="absolute top-0 -left-4 w-96 h-96 bg-green-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000 dark:mix-blend-lighten"></div>
+                <div class="absolute top-0 -right-4 w-80 h-80 bg-sky-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000 dark:mix-blend-lighten"></div>
+                <div class="absolute -bottom-32 left-20 w-72 h-72 bg-indigo-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob dark:mix-blend-lighten"></div>
+                <div class="text-gray-200 w-full">
+                  <h3 class="text-3xl font-medium border-b border-gray-200 pb-2">
                     {{ blogPost.title }}
                   </h3>
-                  <BlogPostMeta :author="blogPost.author" :date="blogPost.dates.published" />
-                </div>
-              </div>
-              <div class="text-gray-400">
-                <div class="">
-                  {{ blogPost.description }}
+                  <div class="text-start">
+                    {{ blogPost.description }}
+                  </div>
+                  <BlogPostMeta :date="blogPost.dates.published" :time="blogPost.time" :tags="blogPost.tags" />
                 </div>
               </div>
             </section>
@@ -31,19 +32,6 @@ const { data: blogPostList } = useAsyncData('blogPostList', () => {
       </div>
     </section>
   </div>
+
 </template>
 
-<style>
-.blog-post-card {
-  padding-top: 2.5rem;
-  padding-bottom: 3rem;
-}
-
-.blog-post-card .card-content {
-  padding: 1rem;
-}
-
-.blog-post-card .title {
-  margin-bottom: 1rem;
-}
-</style>

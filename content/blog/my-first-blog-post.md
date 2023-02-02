@@ -1,6 +1,8 @@
 ---
-title: "My First Blog Post"
+title: "Setting up Firebase with Vue 3"
 author: "@dan"
+time: 3
+tags: [Vue, Firebase, VueFire]
 dates: 
   published: "2023-01-31"
 ---

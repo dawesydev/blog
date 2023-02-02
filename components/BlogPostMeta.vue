@@ -1,16 +1,16 @@
 <script setup>
 const props = defineProps({
-  author: {
-    type: String,
-    required: true
-  },
   date: {
     type: String,
     required: true
   },
-  color: {
-    type: String,
-    default: 'info'
+  time: {
+    type: Number,
+    required: true
+  },
+  tags: {
+    type: Array,
+
   }
 })
 
@@ -20,9 +20,12 @@ const formattedDate = computed(() => {
 </script>
 
 <template>
-  <div class="tags has-addons level-item are-medium">
-    <span class="tag is-rounded" :class="`is-${color}`">{{ author }}</span>
-    <span class="tag is-rounded">{{ formattedDate }}</span>
+  <div class="flex flex-col">
+    <div class="">
+      <span class="">{{ formattedDate }}</span>
+      <span class="uppercase">{{ time }} min read</span>
+    </div>
+    <span v-for="tag in tags" class="flex">{{ tag }}</span>
   </div>
 </template>
 
