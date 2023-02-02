@@ -1,10 +1,10 @@
 <script setup></script>
 
 <template>
-  <section class="bg-hero bg-cover bg-slate-900 h-96">
-    <div class="grid place-items-center w-full pt-16">
+  <section class="bg-slate-900 h-96 grid place-items-center border border-orange-400">
+    <div class="max-w-5xl mx-auto pt-16">
       <div class="font-body text-gray-200">
-        <h1 class="text-2xl">
+        <h1 class="text-3xl font-medium tracking-wide">
           <slot />
         </h1>
         <slot name="subtitle" />

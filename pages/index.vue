@@ -1,6 +1,6 @@
 <template>
-  <main class="bg-[#1e2d42] min-h-screen">
-    <TheHero> Recent Posts </TheHero>
+  <main class="bg-slate-900 min-h-screen">
+    <TheHero>Recent posts</TheHero>
     <BlogPostList />
     <TheFooter />
   </main>

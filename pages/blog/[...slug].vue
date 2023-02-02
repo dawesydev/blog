@@ -22,12 +22,12 @@ const { data: blogPost } = await useAsyncData(`content-${path}`, () => {
         />
       </template>
     </TheHero>
-    <div class="bg-[#1e2d42]">
-      <section class="articles">
-        <div class="column is-8 is-offset-2">
-          <section class="blog-post-card card article">
-            <div class="card-content">
-              <div class="content article-body is-size-5">
+    <div class="bg-slate-900 grid place-items-center border border-rose-400">
+      <section class="">
+        <div class="">
+          <section class="">
+            <div class="">
+              <div class="">
                 <ContentDoc />
               </div>
             </div>
