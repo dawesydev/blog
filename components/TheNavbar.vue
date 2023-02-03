@@ -13,7 +13,7 @@
 <!--    </div>-->
 <!--  </nav>-->
   <nav class="bg-slate-900">
-    <div class="max-w-5xl mx-auto px-4">
+    <div class="max-w-4xl mx-auto px-4">
       <div class="flex justify-between">
         <div class="flex w-full justify-between items-end">
           <!--         logo -->
@@ -24,11 +24,11 @@
           </div>
 
           <!--         central nav -->
-          <div class="hidden md:flex flex justify-end items-center space-x-4 font-body">
-            <NuxtLink to="/" class="text-gray-300 hover:text-gray-100 focus:bg-emerald-400 focus:bg-opacity-10 rounded-md px-3 py-1">Home</NuxtLink>
-            <NuxtLink to="/" class="text-gray-300 hover:text-gray-100 focus:bg-emerald-400 focus:bg-opacity-10 rounded-md px-3 py-1">Blog</NuxtLink>
-            <NuxtLink to="/about" class="text-gray-300 hover:text-gray-100 focus:bg-emerald-400 focus:bg-opacity-10 rounded-md px-3 py-1">About</NuxtLink>
-            <button class="text-gray-300 hover:text-gray-100">
+          <div class="hidden md:flex flex justify-end items-center space-x-4 font-body text-slate-300">
+            <NuxtLink to="/" class="hover:text-emerald-400 hover:bg-slate-800 rounded-md px-3 py-1.5">Home</NuxtLink>
+            <NuxtLink to="/" class="hover:text-emerald-400 hover:bg-slate-800 rounded-md px-3 py-1.5">Blog</NuxtLink>
+            <NuxtLink to="/about" class="hover:text-emerald-400 hover:bg-slate-800 rounded-md px-3 py-1.5">About</NuxtLink>
+            <button class="hover:text-emerald-400 bg-slate-800 rounded-md p-2">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
                 <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd" />
               </svg>

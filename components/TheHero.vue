@@ -2,9 +2,9 @@
 
 <template>
   <section class="bg-slate-900 h-96 grid place-items-center">
-    <div class="max-w-5xl mx-auto pt-16">
-      <div class="font-body text-gray-200">
-        <h1 class="text-3xl font-medium tracking-wide">
+    <div class="max-w-4xl mx-auto pt-16 px-4">
+      <div class="font-body text-gray-200 w-3/4 ">
+        <h1 class="text-3xl font-medium tracking-wide leading-relaxed">
           <slot />
         </h1>
         <slot name="subtitle" />
