@@ -3,9 +3,12 @@
 </script>
 
 <template>
-  <TheNavbar />
-  <div>
-    <NuxtPage />
+  <div class="bg-slate-900">
+    <TheNavbar />
+    <div>
+      <NuxtPage />
+    </div>
   </div>
+
 </template>
 
